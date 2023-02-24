@@ -1,0 +1,22 @@
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const color = params.get('color') || 'white';
+  const svg = params.get('svg') || 'about.svg';
+
+  const request = new XMLHttpRequest();
+  request.open('GET', svg, true);
+  request.send();
+  request.onreadystatechange = function () {
+    if (request.readyState === 4 && request.status === 200) {
+      document.open();
+      document.write(request.responseText);
+      document.close();
+
+      const svg = document.querySelector('svg');
+      svg.setAttribute('fill', color);
+
+      const html = document.getElementsByTagName('html')[0];
+      html.replaceWith(svg);
+    }
+  };
+</script>
