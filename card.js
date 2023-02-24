@@ -1,5 +1,5 @@
 export default {
-  coverImage: 'https://i.pinimg.com/originals/5e/66/18/5e6618a423dbc370f695a947842724ef.jpg',
+  coverImage: 'https://github.com/Ard1t/ard1t.github.io/blob/main/images/hardware.jpg',
   profileImage: 'https://avatars.githubusercontent.com/u/1041415?v=4',
   fullName: 'Ardit Dani',
   profession: 'Decom Data Tech',
