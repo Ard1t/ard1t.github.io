@@ -586,6 +586,30 @@ var app = (function () {
           },
         ],
       },
+      certificatesAndAwards: {
+        title: "Certificates/Awards",
+        icon: "mdi-medal",
+        data: [
+          {
+            title: "Lead Auditor / Auditor",
+            date: "11/2017",
+            issuedBy: "AQSCert (Albania)",
+            description: "Standart ISO/IEC 270001:2013.",
+          },
+          {
+            title: "Serverless Developer",
+            date: "01/2023",
+            issuedBy: "Amazon Web Services (AWS)",
+            description: "AWS Cloud Quest: Serverless Developer.",
+          },
+          {
+            title: "Solution Architect",
+            date: "01/2023",
+            issuedBy: "Amazon Web Services (AWS)",
+            description: "AWS Cloud Quest: Solution Architect.",
+          },
+        ],
+      },
       education: {
         title: "Education",
         icon: "mdi-school",
@@ -611,30 +635,6 @@ var app = (function () {
             institute: "University of Cambridge",
             description:
               "English for Speakers of other languages, University of Cambridge Examination.",
-          },
-        ],
-      },
-      certificatesAndAwards: {
-        title: "Certificates/Awards",
-        icon: "mdi-medal",
-        data: [
-          {
-            title: "Lead Auditor / Auditor",
-            date: "11/2017",
-            issuedBy: "AQSCert (Albania)",
-            description: "Standart ISO/IEC 270001:2013.",
-          },
-          {
-            title: "Serverless Developer",
-            date: "01/2023",
-            issuedBy: "Amazon Web Services (AWS)",
-            description: "AWS Cloud Quest: Serverless Developer.",
-          },
-          {
-            title: "Solution Architect",
-            date: "01/2023",
-            issuedBy: "Amazon Web Services (AWS)",
-            description: "AWS Cloud Quest: Solution Architect.",
           },
         ],
       },
