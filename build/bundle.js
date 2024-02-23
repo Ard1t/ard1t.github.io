@@ -518,6 +518,7 @@ var app = (function () {
       greeting: "Hello, I am Ardit Dani.",
       description:
         "Experienced Information Technology Specialist with a demonstrated history of working in the Entertainment & Casinos industry. Skilled in Engineering, Hardware & Software, Strategic Planning, Networking and Translation on Open Source Projects. Experience working in Data Centers, Data Tech.",
+      birthYear: "Null",
       residence: "Frankfurt, Deutschland",
       freelance: "Unavailable",
       address: "Frankfurt, Deutschland",
@@ -840,7 +841,7 @@ var app = (function () {
     fullName: "Ardit Dani",
     profession: "Datacenter Operations Tech - L4",
     cv: {
-      url: "http://www.msnlabs.com/img/resume-sample.pdf",
+      url: "https://www.dropbox.com/scl/fi/5h08vi2fs1o1cvvkasdi3/Ardit-Dani-2024.pdf?rlkey=u7mf21w8y63tsmh8essagk4x0&dl=0",
       icon: "mdi-download",
     },
     email: { address: "ardit.dani@gmail.com", icon: "mdi-email-send" },
