@@ -552,7 +552,15 @@ var app = (function () {
           title: "Experience",
           icon: "mdi-tie",
           data: [
-            {
+              {
+              title: "Decom Data-Tech L3",
+              start: "04/2022",
+              end: "present",
+              company: "AWS-Amazon Web Services",
+              description:
+                "Responsible for decommissioning, processing and facilitating legacy Data Center equipment. Network hardware maintanance & removal.",
+            },
+              {
               title: "Decom Data-Tech L3",
               start: "04/2022",
               end: "present",
