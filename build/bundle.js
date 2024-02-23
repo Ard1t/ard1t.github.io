@@ -518,7 +518,7 @@ var app = (function () {
       greeting: "Hello, I am Ardit Dani.",
       description:
         "Experienced Information Technology Specialist with a demonstrated history of working in the Entertainment & Casinos industry. Skilled in Engineering, Hardware & Software, Strategic Planning, Networking and Translation on Open Source Projects. Experience working in Data Centers, Data Tech.",
-      birthYear: "Null",
+      birthYear: "1984",
       residence: "Frankfurt, Deutschland",
       freelance: "Unavailable",
       address: "Frankfurt, Deutschland",
