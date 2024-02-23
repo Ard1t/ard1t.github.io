@@ -553,12 +553,20 @@ var app = (function () {
           icon: "mdi-tie",
           data: [
             {
-              title: "Decom Data-Tech L4",
-              start: "04/2022",
+              title: "Datacenter Operations Tech - L4",
+              start: "07/2023",
               end: "present",
               company: "AWS-Amazon Web Services",
               description:
-                "Responsible for decommissioning, processing and facilitating legacy Data Center equipment. Network hardware maintanance & removal.",
+                "Improve/Optimizing Processes & Tasks to simply DC Technician's Operational Task. Creating training for internal used Tools/Programs/App's. Analyze internal tools/workflow constantly for bug's or other issues. Performing regularly/daily Audit's and Inspections of Rack's, Media Handling or Discrepancies. Trainer and providing guidance and learning path for new hires. On-boarding, Mentoring. Collaboration between other Team within AWS for daily activities in DC environment. POC for MDE's & Communication with producers. Assembly & Maintenance of MDE's. Deploy/Install new pilot MDE's equipment for FRA Cluster. Perform fully Rack Decommissioning Processes. Server and Network Troubleshooting, supporting team with technical escalation."
+            },
+            {
+              title: "Decom Data-Tech L3",
+              start: "04/2022",
+              end: "07/2023",
+              company: "AWS-Amazon Web Services",
+              description:
+                "Decommissioning legacy hardware/servers out of data center facilities. High volume of media destruction. Project activities coordination, equipment and tasks improvements. Work to meet SLA’s and trouble tickets system on workflow. Networking equipment removal/installation and configurations. Updating progress tasks through a ticketing system. Sanitization of networking equipment."
             },
             {
               title: "IT Specialist",
