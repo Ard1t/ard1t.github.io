@@ -694,8 +694,10 @@ var app = (function () {
           barType: "dots",
           icon: "mdi-book-open-page-variant",
           items: [
-            { title: "Linux", level: 94 },
-            { title: "Soldering", level: 91 },
+            { title: "OS - Linux/Windows/MacOS", level: 94 },
+            { title: "Datacenter Operations", level: 91 },
+            { title: "IT Support Engineer", level: 95 },
+            { title: "Electronic Engineer", level: 86 },
           ],
         },
       ],
@@ -718,6 +720,12 @@ var app = (function () {
           icon: "mdi-webpack",
           description:
             "Planning and implemenating small-medium sized project of all type of systems requirements.",
+        },
+        {
+          title: "Data Center",
+          icon: "mdi-webpack",
+          description:
+            "Tasks related to Data Center operations, installations, deployments, decommissioning of small-medium sized projects.",
         },
       ],
     },
@@ -1963,88 +1971,6 @@ var app = (function () {
     } = t;
     return (
       (e.$$set = (e) => {
-        "education" in e && n(0, (l = e.education));
-      }),
-      [l]
-    );
-  }
-  class mt extends ne {
-    constructor(e) {
-      super(), te(this, e, ft, dt, s, { education: 0 });
-    }
-  }
-  function pt(t) {
-    let n,
-      l,
-      r,
-      s,
-      i,
-      o,
-      c,
-      a,
-      u,
-      d,
-      f,
-      m,
-      p,
-      v = t[0].date + "",
-      w = t[0].title + "",
-      k = t[0].issuedBy + "",
-      C = t[0].description + "";
-    return {
-      c() {
-        (n = b("div")),
-          (l = b("div")),
-          (r = b("span")),
-          (s = y(v)),
-          (i = x()),
-          (o = b("span")),
-          (c = y(w)),
-          (a = x()),
-          (u = b("span")),
-          (d = y(k)),
-          (f = x()),
-          (m = b("div")),
-          (p = y(C)),
-          S(r, "class", "duration svelte-u0g1dt"),
-          S(o, "class", "block uppercase"),
-          S(u, "class", "block issued-by svelte-u0g1dt"),
-          S(m, "class", "description svelte-u0g1dt"),
-          S(n, "class", "award mt-2 mb-2 svelte-u0g1dt");
-      },
-      m(e, t) {
-        g(e, n, t),
-          $(n, l),
-          $(l, r),
-          $(r, s),
-          $(n, i),
-          $(n, o),
-          $(o, c),
-          $(n, a),
-          $(n, u),
-          $(u, d),
-          $(n, f),
-          $(n, m),
-          $(m, p);
-      },
-      p(e, [t]) {
-        1 & t && v !== (v = e[0].date + "") && A(s, v),
-          1 & t && w !== (w = e[0].title + "") && A(c, w),
-          1 & t && k !== (k = e[0].issuedBy + "") && A(d, k),
-          1 & t && C !== (C = e[0].description + "") && A(p, C);
-      },
-      i: e,
-      o: e,
-      d(e) {
-        e && h(n);
-      },
-    };
-  }
-  function $t(e, t, n) {
-    let { award: l = { title: "", date: "", issuedBy: "", description: "" } } =
-      t;
-    return (
-      (e.$$set = (e) => {
         "award" in e && n(0, (l = e.award));
       }),
       [l]
@@ -2126,6 +2052,88 @@ var app = (function () {
     let {
       academic: l = { title: "", date: "", issuedBy: "", description: "" },
     } = t;
+    return (
+      (e.$$set = (e) => {
+        "education" in e && n(0, (l = e.education));
+      }),
+      [l]
+    );
+  }
+  class mt extends ne {
+    constructor(e) {
+      super(), te(this, e, ft, dt, s, { education: 0 });
+    }
+  }
+  function pt(t) {
+    let n,
+      l,
+      r,
+      s,
+      i,
+      o,
+      c,
+      a,
+      u,
+      d,
+      f,
+      m,
+      p,
+      v = t[0].date + "",
+      w = t[0].title + "",
+      k = t[0].issuedBy + "",
+      C = t[0].description + "";
+    return {
+      c() {
+        (n = b("div")),
+          (l = b("div")),
+          (r = b("span")),
+          (s = y(v)),
+          (i = x()),
+          (o = b("span")),
+          (c = y(w)),
+          (a = x()),
+          (u = b("span")),
+          (d = y(k)),
+          (f = x()),
+          (m = b("div")),
+          (p = y(C)),
+          S(r, "class", "duration svelte-u0g1dt"),
+          S(o, "class", "block uppercase"),
+          S(u, "class", "block issued-by svelte-u0g1dt"),
+          S(m, "class", "description svelte-u0g1dt"),
+          S(n, "class", "award mt-2 mb-2 svelte-u0g1dt");
+      },
+      m(e, t) {
+        g(e, n, t),
+          $(n, l),
+          $(l, r),
+          $(r, s),
+          $(n, i),
+          $(n, o),
+          $(o, c),
+          $(n, a),
+          $(n, u),
+          $(u, d),
+          $(n, f),
+          $(n, m),
+          $(m, p);
+      },
+      p(e, [t]) {
+        1 & t && v !== (v = e[0].date + "") && A(s, v),
+          1 & t && w !== (w = e[0].title + "") && A(c, w),
+          1 & t && k !== (k = e[0].issuedBy + "") && A(d, k),
+          1 & t && C !== (C = e[0].description + "") && A(p, C);
+      },
+      i: e,
+      o: e,
+      d(e) {
+        e && h(n);
+      },
+    };
+  }
+  function $t(e, t, n) {
+    let { award: l = { title: "", date: "", issuedBy: "", description: "" } } =
+      t;
     return (
       (e.$$set = (e) => {
         "academic" in e && n(0, (l = e.academic));
