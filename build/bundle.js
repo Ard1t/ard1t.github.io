@@ -1971,6 +1971,88 @@ var app = (function () {
     } = t;
     return (
       (e.$$set = (e) => {
+        "education" in e && n(0, (l = e.education));
+      }),
+      [l]
+    );
+  }
+  class mt extends ne {
+    constructor(e) {
+      super(), te(this, e, ft, dt, s, { education: 0 });
+    }
+  }
+  function pt(t) {
+    let n,
+      l,
+      r,
+      s,
+      i,
+      o,
+      c,
+      a,
+      u,
+      d,
+      f,
+      m,
+      p,
+      v = t[0].date + "",
+      w = t[0].title + "",
+      k = t[0].issuedBy + "",
+      C = t[0].description + "";
+    return {
+      c() {
+        (n = b("div")),
+          (l = b("div")),
+          (r = b("span")),
+          (s = y(v)),
+          (i = x()),
+          (o = b("span")),
+          (c = y(w)),
+          (a = x()),
+          (u = b("span")),
+          (d = y(k)),
+          (f = x()),
+          (m = b("div")),
+          (p = y(C)),
+          S(r, "class", "duration svelte-u0g1dt"),
+          S(o, "class", "block uppercase"),
+          S(u, "class", "block issued-by svelte-u0g1dt"),
+          S(m, "class", "description svelte-u0g1dt"),
+          S(n, "class", "award mt-2 mb-2 svelte-u0g1dt");
+      },
+      m(e, t) {
+        g(e, n, t),
+          $(n, l),
+          $(l, r),
+          $(r, s),
+          $(n, i),
+          $(n, o),
+          $(o, c),
+          $(n, a),
+          $(n, u),
+          $(u, d),
+          $(n, f),
+          $(n, m),
+          $(m, p);
+      },
+      p(e, [t]) {
+        1 & t && v !== (v = e[0].date + "") && A(s, v),
+          1 & t && w !== (w = e[0].title + "") && A(c, w),
+          1 & t && k !== (k = e[0].issuedBy + "") && A(d, k),
+          1 & t && C !== (C = e[0].description + "") && A(p, C);
+      },
+      i: e,
+      o: e,
+      d(e) {
+        e && h(n);
+      },
+    };
+  }
+  function $t(e, t, n) {
+    let { award: l = { title: "", date: "", issuedBy: "", description: "" } } =
+      t;
+    return (
+      (e.$$set = (e) => {
         "award" in e && n(0, (l = e.award));
       }),
       [l]
@@ -2052,88 +2134,6 @@ var app = (function () {
     let {
       academic: l = { title: "", date: "", issuedBy: "", description: "" },
     } = t;
-    return (
-      (e.$$set = (e) => {
-        "education" in e && n(0, (l = e.education));
-      }),
-      [l]
-    );
-  }
-  class mt extends ne {
-    constructor(e) {
-      super(), te(this, e, ft, dt, s, { education: 0 });
-    }
-  }
-  function pt(t) {
-    let n,
-      l,
-      r,
-      s,
-      i,
-      o,
-      c,
-      a,
-      u,
-      d,
-      f,
-      m,
-      p,
-      v = t[0].date + "",
-      w = t[0].title + "",
-      k = t[0].issuedBy + "",
-      C = t[0].description + "";
-    return {
-      c() {
-        (n = b("div")),
-          (l = b("div")),
-          (r = b("span")),
-          (s = y(v)),
-          (i = x()),
-          (o = b("span")),
-          (c = y(w)),
-          (a = x()),
-          (u = b("span")),
-          (d = y(k)),
-          (f = x()),
-          (m = b("div")),
-          (p = y(C)),
-          S(r, "class", "duration svelte-u0g1dt"),
-          S(o, "class", "block uppercase"),
-          S(u, "class", "block issued-by svelte-u0g1dt"),
-          S(m, "class", "description svelte-u0g1dt"),
-          S(n, "class", "award mt-2 mb-2 svelte-u0g1dt");
-      },
-      m(e, t) {
-        g(e, n, t),
-          $(n, l),
-          $(l, r),
-          $(r, s),
-          $(n, i),
-          $(n, o),
-          $(o, c),
-          $(n, a),
-          $(n, u),
-          $(u, d),
-          $(n, f),
-          $(n, m),
-          $(m, p);
-      },
-      p(e, [t]) {
-        1 & t && v !== (v = e[0].date + "") && A(s, v),
-          1 & t && w !== (w = e[0].title + "") && A(c, w),
-          1 & t && k !== (k = e[0].issuedBy + "") && A(d, k),
-          1 & t && C !== (C = e[0].description + "") && A(p, C);
-      },
-      i: e,
-      o: e,
-      d(e) {
-        e && h(n);
-      },
-    };
-  }
-  function $t(e, t, n) {
-    let { award: l = { title: "", date: "", issuedBy: "", description: "" } } =
-      t;
     return (
       (e.$$set = (e) => {
         "academic" in e && n(0, (l = e.academic));
@@ -2400,112 +2400,6 @@ var app = (function () {
   function Dt(t) {
     let n, l;
     return (
-      (n = new gt({ props: { award: t[9] } })),
-      {
-        c() {
-          K(n.$$.fragment);
-        },
-        m(e, t) {
-          X(n, e, t), (l = !0);
-        },
-        p: e,
-        i(e) {
-          l || (Q(n.$$.fragment, e), (l = !0));
-        },
-        o(e) {
-          V(n.$$.fragment, e), (l = !1);
-        },
-        d(e) {
-          Z(n, e);
-        },
-      }
-    );
-  }
-  function Wt(e) {
-    let t,
-      n,
-      l = fe.certificatesAndAwards.data,
-      r = [];
-    for (let t = 0; t < l.length; t += 1) r[t] = qt(Bt(e, l, t));
-    const s = (e) =>
-      V(r[e], 1, 1, () => {
-        r[e] = null;
-      });
-    return {
-      c() {
-        t = b("div");
-        for (let e = 0; e < r.length; e += 1) r[e].c();
-      },
-      m(e, l) {
-        g(e, t, l);
-        for (let e = 0; e < r.length; e += 1) r[e].m(t, null);
-        n = !0;
-      },
-      p(e, n) {
-        if (0 & n) {
-          let i;
-          for (l = fe.certificatesAndAwards.data, i = 0; i < l.length; i += 1) {
-            const s = Bt(e, l, i);
-            r[i]
-              ? (r[i].p(s, n), Q(r[i], 1))
-              : ((r[i] = qt(s)), r[i].c(), Q(r[i], 1), r[i].m(t, null));
-          }
-          for (O(), i = l.length; i < r.length; i += 1) s(i);
-          G();
-        }
-      },
-      i(e) {
-        if (!n) {
-          for (let e = 0; e < l.length; e += 1) Q(r[e]);
-          n = !0;
-        }
-      },
-      o(e) {
-        r = r.filter(Boolean);
-        for (let e = 0; e < r.length; e += 1) V(r[e]);
-        n = !1;
-      },
-      d(e) {
-        e && h(t), v(r, e);
-      },
-    };
-  }
-  function Ft(e) {
-    let t, n;
-    return (
-      (t = new ot({
-        props: {
-          item: fe.certificatesAndAwards,
-          $$slots: { default: [Wt] },
-          $$scope: { ctx: e },
-        },
-      })),
-      {
-        c() {
-          K(t.$$.fragment);
-        },
-        m(e, l) {
-          X(t, e, l), (n = !0);
-        },
-        p(e, n) {
-          const l = {};
-          262144 & n && (l.$$scope = { dirty: n, ctx: e }), t.$set(l);
-        },
-        i(e) {
-          n || (Q(t.$$.fragment, e), (n = !0));
-        },
-        o(e) {
-          V(t.$$.fragment, e), (n = !1);
-        },
-        d(e) {
-          Z(t, e);
-        },
-      }
-    );
-  }
-  function Rt(t) {
-    let n, l;
-    return (
       (n = new mt({ props: { education: t[12] } })),
       {
         c() {
@@ -2610,6 +2504,112 @@ var app = (function () {
     );
   }
   function qt(t) {
+    let n, l;
+    return (
+      (n = new gt({ props: { award: t[9] } })),
+      {
+        c() {
+          K(n.$$.fragment);
+        },
+        m(e, t) {
+          X(n, e, t), (l = !0);
+        },
+        p: e,
+        i(e) {
+          l || (Q(n.$$.fragment, e), (l = !0));
+        },
+        o(e) {
+          V(n.$$.fragment, e), (l = !1);
+        },
+        d(e) {
+          Z(n, e);
+        },
+      }
+    );
+  }
+  function Wt(e) {
+    let t,
+      n,
+      l = fe.certificatesAndAwards.data,
+      r = [];
+    for (let t = 0; t < l.length; t += 1) r[t] = qt(Bt(e, l, t));
+    const s = (e) =>
+      V(r[e], 1, 1, () => {
+        r[e] = null;
+      });
+    return {
+      c() {
+        t = b("div");
+        for (let e = 0; e < r.length; e += 1) r[e].c();
+      },
+      m(e, l) {
+        g(e, t, l);
+        for (let e = 0; e < r.length; e += 1) r[e].m(t, null);
+        n = !0;
+      },
+      p(e, n) {
+        if (0 & n) {
+          let i;
+          for (l = fe.certificatesAndAwards.data, i = 0; i < l.length; i += 1) {
+            const s = Bt(e, l, i);
+            r[i]
+              ? (r[i].p(s, n), Q(r[i], 1))
+              : ((r[i] = qt(s)), r[i].c(), Q(r[i], 1), r[i].m(t, null));
+          }
+          for (O(), i = l.length; i < r.length; i += 1) s(i);
+          G();
+        }
+      },
+      i(e) {
+        if (!n) {
+          for (let e = 0; e < l.length; e += 1) Q(r[e]);
+          n = !0;
+        }
+      },
+      o(e) {
+        r = r.filter(Boolean);
+        for (let e = 0; e < r.length; e += 1) V(r[e]);
+        n = !1;
+      },
+      d(e) {
+        e && h(t), v(r, e);
+      },
+    };
+  }
+  function Ft(e) {
+    let t, n;
+    return (
+      (t = new ot({
+        props: {
+          item: fe.certificatesAndAwards,
+          $$slots: { default: [Wt] },
+          $$scope: { ctx: e },
+        },
+      })),
+      {
+        c() {
+          K(t.$$.fragment);
+        },
+        m(e, l) {
+          X(t, e, l), (n = !0);
+        },
+        p(e, n) {
+          const l = {};
+          262144 & n && (l.$$scope = { dirty: n, ctx: e }), t.$set(l);
+        },
+        i(e) {
+          n || (Q(t.$$.fragment, e), (n = !0));
+        },
+        o(e) {
+          V(t.$$.fragment, e), (n = !1);
+        },
+        d(e) {
+          Z(t, e);
+        },
+      }
+    );
+  }
+  function Rt(t) {
     let n, l;
     return (
       (n = new bt({ props: { academic: t[6] } })),
